@@ -1,0 +1,47 @@
+<div style="text-align:center">
+  <img class="img-responsive" src="assets/img/tv.jpg" id= 'header'>
+  <h1>
+    Tv Shows
+  </h1>
+</div>
+<div style="text-align:center">
+  <label for="Subject"></label>
+  <input name = 'subject' type="text" [(ngModel)]= "query">
+  <button (click)="searchShows()">Submit</button>
+</div>
+<br>
+<br>
+<div>
+  <ul>{{ 'Title: ' + showsList.title }}</ul>
+  <ul> {{ 'Network: ' + showsList.Network }}</ul>
+  <ul>{{ 'Genre: ' + showsList.genre }}</ul>
+  <ul>{{ 'Description: ' + showsList.description}}</ul>
+</div>
+<br>
+<br>
+<div class = 'row'>
+  <div class="col-md-4" style="text-align:center">
+    <img src="assets/img/parksrec.jpg" >
+    <br>
+    <br>
+    <p>Releaded on: April 9, 2009</p>
+    <p>Genre: Comedy</p>
+    <p>Network: NBC</p>
+  </div>
+  <div class="col-md-4" style="text-align:center">
+    <img src="assets/img/bobs-burger.jpg" >
+    <br>
+    <br>
+    <p>Releaded on: January 9, 2011</p>
+    <p>Genre: Comedy</p>
+    <p>Network: FOX</p>
+  </div>
+  <div class="col-md-4" style="text-align:center">
+    <img src="assets/img/bones-new.jpg" >
+    <br>
+    <br>
+    <p>Releaded on: September 13, 2005</p>
+    <p>Genre: Crime film</p>
+    <p>Network: FOX </p>
+  </div>
+</div>

@@ -5,15 +5,21 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ShowService } from './services/show.service';
 
 import { RoutingModule} from './app.routes';
-// import { SearchByPipe } from './pipes/search-by.pipe';
+import { TvShowDetailComponent } from './tv-show-detail/tv-show-detail.component';
+import { TvListComponent } from './tv-list/tv-list.component';
+import { SearchByPipe } from './pipes/search-by.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomepageComponent
+    HomepageComponent,
+    TvShowDetailComponent,
+    TvListComponent,
+    SearchByPipe
   ],
   imports: [
     BrowserModule,
@@ -21,7 +27,7 @@ import { RoutingModule} from './app.routes';
     HttpClientModule,
     RoutingModule
   ],
-  providers: [],
+  providers: [ShowService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

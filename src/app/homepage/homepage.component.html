@@ -1,5 +1,5 @@
 <div style="text-align:center">
-  <img class="img-responsive" src="assets/img/tv.jpg" id= 'header'>
+  <img class="img-responsive" src="assets/img/91740-a1970705765-10.jpg" id= 'header'>
   <h1>
     Tv Shows
   </h1>
@@ -11,14 +11,18 @@
 </div>
 <br>
 <br>
+
 <div>
-  <ul>{{ 'Title: ' + showsList.title }}</ul>
-  <ul> {{ 'Network: ' + showsList.Network }}</ul>
-  <ul>{{ 'Genre: ' + showsList.genre }}</ul>
-  <ul>{{ 'Description: ' + showsList.description}}</ul>
+  <ul>
+    <li *ngFor="let show of showsList">
+      <a routerLink="/tv/{{show.id}}">{{show.title}}</a>
+    </li>
+  </ul>
 </div>
+
 <br>
 <br>
+
 <div class = 'row'>
   <div class="col-md-4" style="text-align:center">
     <img src="assets/img/parksrec.jpg" >

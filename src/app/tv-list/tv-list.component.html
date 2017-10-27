@@ -1,0 +1,10 @@
+<div class = 'container-fluid'>
+  <br><br>
+  <input type="text" placeholder="Search List" class= "filter-input" [(ngModel)]="searchText">
+  <br><br>
+  <ul>
+    <li *ngFor="let show of shows | searchBy: ['title']: [searchText]">
+      <a routerLink="/tv/{{show.id}}">{{show.title}}</a>
+    </li>
+  </ul>
+</div>

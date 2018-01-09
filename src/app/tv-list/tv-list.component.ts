@@ -7,7 +7,7 @@ import { ShowService } from '../services/show.service';
 })
 export class TvListComponent implements OnInit {
   public shows;
-
+  public searchText;
   constructor( private showService: ShowService) { }
 
   ngOnInit() {
